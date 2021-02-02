@@ -8,6 +8,8 @@ $ pkg install wget
 
 $ pkg install openssh
 
+$ pkg install git
+
 $ git clone https://github.com/laguerta23/hackcam
 
 Usage
